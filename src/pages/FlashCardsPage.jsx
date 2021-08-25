@@ -13,10 +13,11 @@ const FlashCardsPage = () => {
 
       <Main>
         <FLashCards>
-          <FlashCard />
-          <FlashCard />
-          <FlashCard />
-          <FlashCard />
+          {allFlashCards.map(({ id, title, description }) => {
+            return (
+              <FlashCard key={id} title={title} description={description} />
+            );
+          })}
         </FLashCards>
       </Main>
     </>
