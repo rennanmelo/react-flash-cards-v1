@@ -1,4 +1,4 @@
-const FlashCard = ({ title, description }) => {
+const FlashCard = ({ id, title, description, showFlashCardTitle }) => {
   return (
     <div
       className="shadow-lg p-4 m-2 w-80 h-48 cursor-pointer
@@ -6,7 +6,7 @@ const FlashCard = ({ title, description }) => {
       font-semibold "
       style={{ fontFamily: "'JetBrains Mono', monospace" }}
     >
-      {title} - {description}
+      {showFlashCardTitle ? title : description}
     </div>
   );
 };

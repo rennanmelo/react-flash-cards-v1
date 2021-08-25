@@ -52,6 +52,6 @@ export const allFlashCards = [
   },
 ]
   .map((item) => {
-    return { id: getNewId(), ...item };
+    return { id: getNewId(), ...item, showFlashCardTitle: true };
   })
   .sort((a, b) => a.title.localeCompare(b.title));
