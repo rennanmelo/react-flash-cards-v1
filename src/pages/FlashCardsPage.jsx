@@ -1,3 +1,4 @@
+import FlashCard from "../components/FlashCard";
 import Header from "../components/Header";
 import Main from "../components/Main";
 
@@ -6,7 +7,12 @@ const FlashCardsPage = () => {
     <>
       <Header>react-flash-cards-v1</Header>
 
-      <Main>Main Content</Main>
+      <Main>
+        <FlashCard />
+        <FlashCard />
+        <FlashCard />
+        <FlashCard />
+      </Main>
     </>
   );
 };
